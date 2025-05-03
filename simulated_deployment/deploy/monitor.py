@@ -11,7 +11,7 @@ latest = {}
 def classify(rul):
     if rul > 100: return "Healthy"
     if rul > 50:  return "Minor"
-    if rul > 10:  return "Major"
+    if rul > 20:  return "Major"
     return "Broken"
 
 # clear console
