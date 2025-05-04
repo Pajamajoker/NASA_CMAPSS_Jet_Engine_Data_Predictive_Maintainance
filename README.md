@@ -1,7 +1,9 @@
 # Predicting Remaining Useful Life (RUL) of Aircraft Engines using CMAPSS Dataset
 
 This repository contains all the work related to a machine learning pipeline that predicts the Remaining Useful Life (RUL) of aircraft engines using the [CMAPSS dataset](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository). It includes research experiments, final models, a project report, and a **simulated production deployment** of the best-performing model (SVR).
- 
+
+## Slides link: https://docs.google.com/presentation/d/18JEjDlT24bjkFT8RdOxX__Coai8zP3engZf0OW3rmfM/edit?usp=sharing
+
 ## 📁 Folder Structure
 ```bash
 .
