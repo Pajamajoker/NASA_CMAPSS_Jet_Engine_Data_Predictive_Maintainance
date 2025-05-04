@@ -2,8 +2,6 @@
 
 This repository contains all the work related to a machine learning pipeline that predicts the Remaining Useful Life (RUL) of aircraft engines using the [CMAPSS dataset](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository). It includes research experiments, final models, a project report, and a **simulated production deployment** of the best-performing model (SVR).
  
----
-
 ## 📁 Folder Structure
 .
 ├── dataset/ # Raw CMAPSS dataset files
@@ -22,12 +20,6 @@ This repository contains all the work related to a machine learning pipeline tha
 │ │ └── pipeline.py # Simulates data stream and RUL prediction
 │ └── model/ # Saved model files
 
-yaml
-Copy
-Edit
-
----
-
 ## 📊 Project Overview
 
 The goal of this project is to predict the Remaining Useful Life (RUL) of turbofan engines using multivariate time-series sensor data. The solution includes:
@@ -40,8 +32,6 @@ The goal of this project is to predict the Remaining Useful Life (RUL) of turbof
   - XGBoost Regressor
 - Simulated deployment environment to demonstrate streaming inference
 
----
-
 ## 🚀 Simulated Deployment Instructions
 
 The `simulated_deployment/` folder demonstrates how the best-performing model (SVR) could be used in a streaming setting.
@@ -51,22 +41,26 @@ The `simulated_deployment/` folder demonstrates how the best-performing model (S
 ```bash
 cd simulated_deployment/build
 python train.py
+```
 This script loads the dataset, trains the SVR model, and saves it in the model/ directory.
 
 Step 2: Start the Monitoring System
 Open Terminal 1:
 
-bash
+```bash
 cd simulated_deployment/deploy
 python monitor.py
+```
 This script keeps watching the latest predictions and prints a summary of the engine's health based on current RUL.
 
 Step 3: Start the Prediction Pipeline
 Open Terminal 2 in parallel:
 
-bash
+```bash
 cd simulated_deployment/deploy
 python pipeline.py
+```
+
 This simulates sensor data coming in from 100 engines cycle-by-cycle and runs the SVR model to predict their RUL in real-time.
 
 🧪 Notebooks for Research
