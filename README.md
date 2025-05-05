@@ -4,6 +4,8 @@ This repository contains all the work related to a machine learning pipeline tha
 
 ## Slides link: https://docs.google.com/presentation/d/18JEjDlT24bjkFT8RdOxX__Coai8zP3engZf0OW3rmfM/edit?usp=sharing
 
+## Youtube video link: https://youtu.be/CFQKT3Tm67g
+
 ## 📁 Folder Structure
 ```bash
 .
